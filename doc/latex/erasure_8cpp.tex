@@ -2,18 +2,35 @@
 \label{erasure_8cpp}\index{src/erasure.cpp@{src/erasure.cpp}}
 
 
-Implementation of the Type Erasure Design Pattern.  
+Implementation of the Type Erasure Design Pattern (SBO \& MVD)  
 
 
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{classfeature}{feature}}
+\item 
+struct \mbox{\hyperlink{structlocation}{location}}
+\item 
+class \mbox{\hyperlink{classsource}{source}}
+\item 
+class \mbox{\hyperlink{classsink}{sink}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{erasure_8cpp_a7bb8faff438aceddce4151db89190c30}\label{erasure_8cpp_a7bb8faff438aceddce4151db89190c30}} 
+void {\bfseries visualise} (std\+::vector$<$ \mbox{\hyperlink{classfeature}{feature}} $>$ const \&feature\+\_\+collection)
+\item 
+\mbox{\Hypertarget{erasure_8cpp_aced63931e5f2ace34f31e23665c5425e}\label{erasure_8cpp_aced63931e5f2ace34f31e23665c5425e}} 
+void {\bfseries visualise} (\mbox{\hyperlink{classsource}{source}} const \&a\+\_\+source)
+\item 
+\mbox{\Hypertarget{erasure_8cpp_a850eced56d4f5f30e58a3484b4140ae2}\label{erasure_8cpp_a850eced56d4f5f30e58a3484b4140ae2}} 
+void {\bfseries visualise} (\mbox{\hyperlink{classsink}{sink}} const \&a\+\_\+sink)
 \item 
 \mbox{\Hypertarget{erasure_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{erasure_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
 int {\bfseries main} ()
@@ -21,5 +38,5 @@ int {\bfseries main} ()
 
 
 \doxysubsection{Detailed Description}
-Implementation of the Type Erasure Design Pattern. 
+Implementation of the Type Erasure Design Pattern (SBO \& MVD) 
 

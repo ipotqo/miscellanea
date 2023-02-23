@@ -20,7 +20,11 @@ set (
     src
 )
 
-add_executable (
-    erasure
-    ${SOURCE_DIR}/erasure.cpp
-)
+file( GLOB SOURCE_FILES src/*.cpp )
+
+foreach(SOURCE_PATH ${SOURCE_FILES})
+
+    get_filename_component(EXECUTABLE_NAME ${SOURCE_PATH} NAME_WE)
+    add_executable(${EXECUTABLE_NAME} ${SOURCE_PATH})
+
+endforeach(SOURCE_PATH ${SOURCE_FILES})
